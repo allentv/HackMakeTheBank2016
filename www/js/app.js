@@ -56,10 +56,21 @@ angular.module('starter', ['ionic', 'starter.controllers'])
       url: '/alert',
       views: {
         'menuContent': {
-          templateUrl: 'templates/alert.html'
+          templateUrl: 'templates/alert.html',
+          controller: 'AlertsCtrl'
         }
       }
     })
+
+    .state('app.transfer', {
+        url: '/transfer',
+        views: {
+            'menuContent': {
+                templateUrl: 'templates/transfer.html'
+            }
+        }
+    })
+
     .state('app.playlists', {
       url: '/playlists',
       views: {
@@ -100,5 +111,5 @@ angular.module('starter', ['ionic', 'starter.controllers'])
   })
   ;
   // if none of the above states are matched, use this as the fallback
-  $urlRouterProvider.otherwise('/app/analysis');
+  $urlRouterProvider.otherwise('/app/login');
 });

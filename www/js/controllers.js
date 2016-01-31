@@ -64,7 +64,15 @@ angular.module('starter.controllers', [])
 })
 
 .controller('AnalysisCtrl', function($scope, $state) {
+    $scope.handleApproval = function() {
+        $state.go("app.congrats");
+    };
+})
 
+.controller('AlertsCtrl', function($scope, $state) {
+    $scope.transferFunds = function () {
+        $state.go("app.transfer");
+    };
 })
 
 .controller('DashboardCtrl', function($scope, $state) {
