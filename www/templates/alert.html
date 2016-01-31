@@ -1,0 +1,72 @@
+<ion-view view-title="Alerts">
+    <ion-nav-buttons side="left">
+        <button class="button button-icon button-clear ion-navicon"
+            menu-toggle="left">
+        </button>
+    </ion-nav-buttons>
+    <ion-content>
+            <div class="card">
+                <div class="item item-divider">
+                    Direct Debit due on <b>2nd Feb 2016</b>
+                    <br>
+                    Funds short by <b>EUR 500</b>
+                </div>
+            </div>
+
+        <center><h4><font color="#1a1aff">Recommended Options</font></h4></center>
+
+        <div class="list card">
+
+            <div class="item item-text-wrap">
+                <div class="row">
+                    <div class="col-300">
+                    Move fund EUR 500 from AIB (AIB123ACD) to Ulster Bank (UB123ACD)
+                    </div>
+                    <div class="col">
+                        <button class="button button-positive" ng-click="transferFunds()">
+                            Transfer
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <center><h4><font color="#1a1aff">Other Options</font></h4></center>
+
+        <div class="list card">
+
+            <div class="item item-text-wrap">
+                <div class="row">
+                    <div class="col-300">
+                        Move fund EUR 500 from BOI (AIB123ACD) to Ulster Bank (UB123ACD)
+                    </div>
+                    <div class="col">
+                        <button class="button button-positive" ng-click="transferFunds()">
+                            Transfer
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="list card">
+
+            <div class="item item-text-wrap">
+                <div class="row">
+                    <div class="col-300">
+                        Custom Fund Transfer&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    </div>
+                    <div class="col">
+                        <button class="button button-positive" ng-click="transferFunds()">
+                            Transfer
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </ion-content>
+</ion-view>
